@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<script>(function(){try{var t=localStorage.getItem("et_theme");if(t==="dark"||(!t&&window.matchMedia("(prefers-color-scheme: dark)").matches)){document.documentElement.setAttribute("data-theme","dark");}}catch(e){}})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ethio Tefetagn - ኢትዮ ተፈታኝ — ESSLCE Exam Prep for Ethiopian Students</title>
+<meta name="description" content="Ethio Tefetagn helps Natural Science and Social Science students prepare for the ESSLCE with practice questions and an AI study assistant.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Noto+Sans+Ethiopic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+  <svg class="icon-moon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+  <svg class="icon-sun" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="4.5" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+</button>
+
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="index.html">
+      <svg class="brand-mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <g>
+          <ellipse cx="20" cy="10" rx="6" ry="10" fill="#E8A93A"/>
+          <ellipse cx="20" cy="10" rx="6" ry="10" fill="#1E5631" transform="rotate(60 20 20)"/>
+          <ellipse cx="20" cy="10" rx="6" ry="10" fill="#A13D2B" transform="rotate(120 20 20)"/>
+          <ellipse cx="20" cy="10" rx="6" ry="10" fill="#E8A93A" transform="rotate(180 20 20)"/>
+          <ellipse cx="20" cy="10" rx="6" ry="10" fill="#1E5631" transform="rotate(240 20 20)"/>
+          <ellipse cx="20" cy="10" rx="6" ry="10" fill="#A13D2B" transform="rotate(300 20 20)"/>
+          <circle cx="20" cy="20" r="6" fill="#E8A93A" stroke="#C98423" stroke-width="1.5"/>
+        </g>
+      </svg>
+      <span class="brand-name">Ethio <em>Tefetagn</em> <span class="brand-am">- ኢትዮ ተፈታኝ</span></span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    <nav class="site-nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="dashboard.html?stream=natural">Natural Science</a>
+      <a href="dashboard.html?stream=social">Social Science</a>
+      <a href="chatbot.html">AI Study Assistant</a>
+      <a href="library.html">Library</a>
+    </nav>
+  </div>
+</header>
+
+<section class="wrap hero">
+  <div>
+    <p class="eyebrow">Ethio Tefetagn - ኢትዮ ተፈታኝ · ESSLCE Exam Preparation</p>
+    <h1>Study smarter for the exam that decides your next chapter.</h1>
+    <p class="tagline">Ethio Tefetagn gives Natural Science and Social Science students focused practice questions in every subject, plus an AI study assistant that explains answers straight from your curriculum books.</p>
+
+    <div class="countdown">
+      <div>
+        <div class="num" id="countdown-days">—</div>
+        <div class="lbl">days to prepare</div>
+      </div>
+      <div style="width:1px;align-self:stretch;background:rgba(251,246,233,0.25)"></div>
+      <div style="max-width:220px;font-size:0.85rem;opacity:0.9">
+        Update the exam date in <code>main.js</code> once your session's official ESSLCE date is announced.
+      </div>
+    </div>
+
+    <div class="hero-cta">
+      <a href="#streams" class="btn btn-primary">Choose your stream</a>
+      <a href="chatbot.html" class="btn btn-ghost">Ask the AI assistant</a>
+    </div>
+
+    <div style="margin-top:28px;">
+      <span class="visit-chip">
+        <span class="visit-dot"></span>
+        <strong id="visit-count">…</strong>
+        <span id="visit-label">visitors</span>
+      </span>
+    </div>
+  </div>
+
+  <div class="bloom-wrap">
+    <svg class="bloom" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a blooming Meskel flower">
+      <g>
+        <ellipse cx="200" cy="120" rx="34" ry="76" fill="#E8A93A" fill-opacity="0.92"/>
+        <ellipse cx="200" cy="120" rx="34" ry="76" fill="#1E5631" fill-opacity="0.85" transform="rotate(60 200 200)"/>
+        <ellipse cx="200" cy="120" rx="34" ry="76" fill="#A13D2B" fill-opacity="0.85" transform="rotate(120 200 200)"/>
+        <ellipse cx="200" cy="120" rx="34" ry="76" fill="#E8A93A" fill-opacity="0.92" transform="rotate(180 200 200)"/>
+        <ellipse cx="200" cy="120" rx="34" ry="76" fill="#1E5631" fill-opacity="0.85" transform="rotate(240 200 200)"/>
+        <ellipse cx="200" cy="120" rx="34" ry="76" fill="#A13D2B" fill-opacity="0.85" transform="rotate(300 200 200)"/>
+        <circle cx="200" cy="200" r="34" fill="#F6DFA9" stroke="#C98423" stroke-width="2.5"/>
+        <circle cx="200" cy="200" r="34" fill="none" stroke="#fff" stroke-width="1" stroke-dasharray="3 6" opacity="0.7"/>
+      </g>
+    </svg>
+  </div>
+</section>
+
+<section class="section wrap" id="streams">
+  <div class="section-head">
+    <p class="eyebrow">Step one</p>
+    <h2>Pick your stream</h2>
+    <p>Every subject below is stocked with practice questions written in the spirit of the ESSLCE — and your progress feeds a "readiness bloom" you'll see on your dashboard.</p>
+  </div>
+  <div class="grid-2">
+    <a class="stream-card natural" href="dashboard.html?stream=natural">
+      <span class="eyebrow">Natural Science</span>
+      <h3>Natural Science stream</h3>
+      <p>Maths, English, SAT, Biology, Chemistry, and Physics.</p>
+      <ul>
+        <li>Practice sets for every subject</li>
+        <li>Instant scoring with explanations</li>
+        <li>Readiness bloom tracks your progress</li>
+      </ul>
+      <p style="margin-top:16px;"><strong>Start practicing →</strong></p>
+    </a>
+    <a class="stream-card social" href="dashboard.html?stream=social">
+      <span class="eyebrow">Social Science</span>
+      <h3>Social Science stream</h3>
+      <p>Maths, English, SAT, Economics, Geography, and History.</p>
+      <ul>
+        <li>Practice sets for every subject</li>
+        <li>Instant scoring with explanations</li>
+        <li>Readiness bloom tracks your progress</li>
+      </ul>
+      <p style="margin-top:16px;"><strong>Start practicing →</strong></p>
+    </a>
+  </div>
+</section>
+
+<section class="section wrap">
+  <div class="section-head">
+    <p class="eyebrow">What's inside</p>
+    <h2>Built around how ESSLCE prep actually works</h2>
+  </div>
+  <div class="grid-3">
+    <div class="card">
+      <h3>Practice question banks</h3>
+      <p>Multiple-choice questions with instant feedback and short explanations for every subject in both streams, so mistakes turn into understanding.</p>
+    </div>
+    <div class="card">
+      <h3>AI study assistant</h3>
+      <p>Ask a question about a topic in your textbook and get a plain-language explanation. Once your curriculum books are loaded in, answers will point to the exact page they came from.</p>
+    </div>
+    <div class="card">
+      <h3>Readiness bloom</h3>
+      <p>A simple visual — inspired by the adey abeba that blooms at the start of the school year — that shows which subjects need more attention before exam day.</p>
+    </div>
+    <div class="card">
+      <h3>Textbook library</h3>
+      <p>Every subject's Grade 9–12 curriculum book, viewable and downloadable in one place once it's uploaded — see the <a href="library.html">Library</a>.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© <span id="year"></span> Ethio Tefetagn — built for Ethiopian ESSLCE candidates.</span>
+    <span class="badge">Beta</span>
+  </div>
+</footer>
+
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
