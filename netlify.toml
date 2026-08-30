@@ -1,0 +1,6 @@
+# Netlify config for the frontend. Point Netlify at this repo and it will
+# publish the contents of public/ as-is — no build step needed since the
+# site is plain HTML/CSS/JS.
+[build]
+  publish = "public"
+  command = ""

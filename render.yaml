@@ -1,0 +1,20 @@
+# Render Blueprint — lets you deploy the backend with "New + Blueprint" on
+# render.com pointed at this repo, instead of configuring each field by hand.
+# You'll still need to set ANTHROPIC_API_KEY and ALLOWED_ORIGINS yourself
+# (Render won't let secrets live in this file).
+services:
+  - type: web
+    name: ethiotefetagn-api
+    runtime: node
+    plan: free
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: ALLOWED_ORIGINS
+        sync: false
+      - key: PORT
+        value: 3000
+    healthCheckPath: /api/health
